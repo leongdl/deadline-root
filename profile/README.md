@@ -42,7 +42,7 @@ Deadline Cloud supports service-managed fleets (SMF) and customer-managed fleets
 | Software | Repository | CMF| SMF |
 | ---------- | - | - | - |
 | [Adobe After Effects](https://www.adobe.com/products/aftereffects.html) | [deadline-cloud-for-after-effects](https://github.com/aws-deadline/deadline-cloud-for-after-effects) | ✅ | ✅ |
-| [Autodesk 3ds Max](https://www.autodesk.com/products/3ds-max/overview) | [deadline-cloud-for-3ds-max](https://github.com/aws-deadline/deadline-cloud-for-3ds-max) | ✅ |  |
+| [Autodesk 3ds Max](https://www.autodesk.com/products/3ds-max/overview) | [deadline-cloud-for-3ds-max](https://github.com/aws-deadline/deadline-cloud-for-3ds-max) | ✅ | ＊ |
 | [Autodesk Maya](https://www.autodesk.com/products/maya/overview/) | [deadline-cloud-for-maya](https://github.com/aws-deadline/deadline-cloud-for-maya) | ✅ | ✅ |
 | [Blender](https://www.blender.org/) | [deadline-cloud-for-blender](https://github.com/aws-deadline/deadline-cloud-for-blender) | ✅ | ✅ |
 | [KeyShot Studio](https://www.keyshot.com/) | [deadline-cloud-for-keyshot](https://github.com/aws-deadline/deadline-cloud-for-keyshot) | ✅ | ✅ |
@@ -51,6 +51,8 @@ Deadline Cloud supports service-managed fleets (SMF) and customer-managed fleets
 | [Rhino](https://www.rhino3d.com/) | [deadline-cloud-for-rhino](https://github.com/aws-deadline/deadline-cloud-for-rhino) | ✅ |  |
 | [SideFX Houdini](https://www.sidefx.com/) | [deadline-cloud-for-houdini](https://github.com/aws-deadline/deadline-cloud-for-houdini) | ✅ | ✅ |
 | [Unreal Engine](https://www.unrealengine.com/) | [deadline-cloud-for-unreal-engine](https://github.com/aws-deadline/deadline-cloud-for-unreal-engine) | ✅ |  |
+
+* Supported via Service Managed Fleets with Host Configuration Scripts. [AWS Documentation](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_HostConfiguration.html)
 
 ## Service clients and sample repositories
 
