@@ -26,6 +26,7 @@ This GitHub org has integrations (such as job submission plugins) for a selectio
 | - | - |
 | [deadline-cloud](https://github.com/aws-deadline/deadline-cloud) | A Python CLI and library for interacting with Deadline Cloud, especially submitting jobs. |
 | [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples) | Example code and tools for running workloads on Deadline Cloud. |
+| [deadline-cloud-job-attachments](https://github.com/aws-deadline/deadline-cloud-job-attachments) | A Python library for Deadline Cloud Job Attachments related functionality. |
 | [deadline-cloud-worker-agent](https://github.com/aws-deadline/deadline-cloud-worker-agent) | Software that runs on workers and communicates with the Deadline Cloud API for receiving and completing tasks. |
 
 ## FAQ
