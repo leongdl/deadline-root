@@ -1,0 +1,28 @@
+# Stage 1 of the Claude PR-review integration (the "collect" workflow).
+#
+# This runs on `pull_request`, so for PRs from forks GitHub provides no secrets
+# and a read-only GITHUB_TOKEN. It does no work and produces no artifact: its
+# only purpose is to complete, which fires the workflow_run event that starts
+# Stage 2 (`reusable_claude_pr_review.yml`).
+#
+# Deliberately produces nothing that Stage 2 trusts. Because `pull_request` runs
+# a fork's copy of this file, anything it wrote would be fork-controlled. Stage 2
+# instead derives the PR number, head SHA, and base SHA from the server-populated
+# workflow_run event payload, so a malicious fork cannot redirect the review or
+# its comments to an arbitrary PR/issue in the base repo.
+name: Claude PR Review (collect)
+
+on:
+  workflow_call:
+
+# No permissions needed: this stage only exists to fire the workflow_run event.
+permissions: {}
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      # A no-op. Stage 2 reads nothing from this run; it only needs the run to
+      # complete so the workflow_run trigger fires.
+      - name: Trigger review stage
+        run: 'echo "PR event recorded; review runs via workflow_run."'
